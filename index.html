@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="font-family" href="https://fonts.google.com/specimen/Space+Mono">
+  <link rel="stylesheet" href="App.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <form name="calculator" method="get">
+    <div class="logo-container">
+      <img src="images/logo.svg">
+    </div>
+    <main class="container">
+      <div class="left-section">
+        <div class="bill">Bill</div>
+        <div class="bill-container">
+          <img src="images/icon-dollar.svg">
+          <input type="number" class="bill-input" id="bill" name="bill" oninput="validate()" placeholder="0">
+        </div>
+        <div class="select-tip-text">Select Tip &#37;</div>
+        <div class="button-grid">
+          <input type="radio" id="5" name="tip" value="5"  onclick="validate()">
+          <label for="5" class="five-percent">5%</label>
+          <input type="radio" name="tip" value="10"  onclick="validate()">
+          <label for="10" class="ten-percent">10%</label>
+          <input type="radio" id="15" name="tip" value="15"  onclick="validate()">
+          <label for="15" class="fifteen-percent">15%</label>
+          <input type="radio" name="tip" id="25" value="25" onclick="validate()">
+          <label for="25" class="twenty-five-percent">25%</label>
+          <input id="50" type="radio" name="tip"  value="50" onclick="validate()">
+          <label for="50" class="fifty-percent">50%</label>
+          <div class="custom">
+            <input type="number" min="0" max="100" 
+            class="custom-input-percent" id="custom-tip" placeholder="Custom" oninput="validate()">
+          </div>
+        </div>
+        <div class="text-input">
+          <label class="number-of-people">Number of People</label>
+          <label class="error" id="error">Can&#39;t be zero</label>
+        </div>
+       
+        <div class="number-of-people-input">
+          <img src="images/icon-person.svg">
+          <input class="num-input" id="people" placeholder="0" oninput="validate()">
+        </div>
+      </div>
+      <div class="results-container">
+        <div class="result-details">
+          <div class="tip-per-person">
+            <div class="tip">
+              Tip Amount
+              <span class="tip-person">/ person</span>
+            </div>
+            <div class="tip-amount">
+              &#36;0.00
+            </div>
+          </div>
+          <div class="total-per-person">
+            <div class="total">
+              Total
+              <span class="total-person">/ person </span>         
+            </div>
+            <div class="total-amount">
+              &#36;0.00
+            </div>
+          </div>
+          <div>
+            <input type="RESET" onclick="resetClick()" class="reset-btn">
+        </div>
+        </div>
+      </div>
+    </main>
+  </form>
+
+
+
+ 
+
+ 
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="code.js"></script>
+</body>
+</html>

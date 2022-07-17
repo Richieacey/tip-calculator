@@ -1,0 +1,384 @@
+body {
+    font-family: Space Mono, Arial;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.percentage-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type="radio"] {display: none;}
+
+.five-percent {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.logo-container {
+    position: absolute;
+    top: 1.5rem;
+    right:50%;
+}
+
+.container {
+    position: relative;
+    margin-top: 12rem;
+}
+
+.ten-percent {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.fifteen-percent {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.percentage-btn, .one {
+    margin-bottom: 16px;
+}
+
+.twenty-five-percent {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.fifty-percent {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.five-percent:active, .ten-percent:active, 
+.fifteen-percent:active, 
+.twenty-five-percent:active, 
+.fifty-percent:active {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.five-percent, .ten-percent, 
+.fifteen-percent, 
+.twenty-five-percent, 
+.fifty-percent {
+    transition: 0.15s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.percentage-btn label {
+    font-size: 1.5rem;
+}
+
+
+
+.custom-input-percent {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    width: 100px;
+    background-color: hsl(189, 41%, 97%);
+    font-size: 1.5rem;
+    color: hsl(183, 96%, 11%);
+    text-align: right;
+    border: none;
+}
+
+.custom-input-percent:focus {
+    outline: none;
+}
+
+
+.custom:active {
+    border-color: hsl(172, 67%, 45%);
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.custom:hover {
+    border-color: hsl(172, 67%, 45%);
+    border-style: solid;
+    border-radius: 4px;
+}
+
+
+
+.custom-input-percent::placeholder {
+    color: hsl(183, 96%, 11%);
+    font-size: 24px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    width: 67%;
+    height: 28rem;
+    margin-left:14rem;
+    margin-top: 3.7rem;
+    border-radius: 1.5rem;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
+    row-gap: 10%;
+}
+
+form {
+    margin-top: 10%;
+}
+
+.bill-container {
+    background-color: hsl(189, 41%, 97%);
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section {
+    width: 40%;
+}
+
+.tip-per-person, .total-per-person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.bill-input {
+    display: inline-block;
+    align-items: center;
+    border: 0;
+    background-color: hsl(189, 41%, 97%);
+    width: 100%;
+    text-align: right;
+    font-size: 1.5rem;
+    color: hsl(183, 96%, 11%);
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.bill-input:focus {
+    outline: none;
+}
+
+.bill-container:hover {
+    border-color: hsl(172, 67%, 45%);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+
+.bill-container:active {
+    border-color: hsl(172, 67%, 45%);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.bill-input::placeholder {
+    font-size: 24px;
+    color: hsl(183, 96%, 11%);
+}
+
+.select-tip-text {
+    font-size: 20px;
+    margin-top: 2.95rem;
+    margin-bottom: 1.125rem;
+}
+
+.results-container {
+    background-color: #00474b;
+    width: 50%;
+    margin-left: 3rem;
+    height: 25rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reset-btn {
+    /* padding-left: 130px;
+    padding-right: 130px; */
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 22px;
+    color: #00474b;
+    background-color: #0d686d;
+    border: none;
+    border-radius: 6px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+.tip {
+    color: white;
+    font-size: 20px;
+    line-height: 1.375rem;
+    width: 35%;
+}
+
+.tip-person {
+    color: #5a8689;
+    font-size: 16px;
+}
+
+.tip-amount {
+    font-size: 50px;
+    color:  hsl(172, 67%, 45%);
+}
+
+.total {
+    color: white;
+    font-size: 20px;
+    line-height: 22px; 
+    width: 3rem;
+}
+
+.total-person {
+    color: #5a8689;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.total-amount {
+    font-size: 50px;
+    color:  hsl(172, 67%, 45%);
+}
+
+.result-details {
+    margin-top: 40px;
+    width: 80%;
+}
+
+.tip-per-person {
+    margin-bottom: 28px;
+}
+
+.total-per-person {
+    margin-bottom: 130px;
+}
+
+.two {
+    margin-bottom: 40px;
+}
+
+.number-of-people {
+    margin-bottom: 12px;
+}
+
+.num-input {
+    width: 100%;
+    height: 50%;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    cursor: pointer;
+    text-align:end;
+    font-size: 24px;
+    color: hsl(183, 96%, 11%);
+}
+
+.num-input:focus {
+    outline: none;
+}
+
+.num-input::placeholder {
+    font-size: 24px;
+    color: hsl(183, 96%, 11%);
+}
+
+.number-of-people-input {
+    margin-left: 8px;
+    background-color:  hsl(189, 41%, 97%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-of-people-input:active {
+    border-color: hsl(172, 67%, 45%);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+.number-of-people-input:hover {
+    border-color: hsl(172, 67%, 45%);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+.bill {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.text-input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.error {
+    color: red;
+    display: block;
+}
+
+.reset-btn:active {
+    background-color: hsl(172, 67%, 45%);
+}
+
+input[type="reset"] {
+    text-transform: uppercase;
+}
